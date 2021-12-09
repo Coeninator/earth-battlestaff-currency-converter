@@ -23,12 +23,15 @@ public class EarthBattlestaffCurrencyConverterPlugin extends Plugin {
 
 	@Override
 	protected void startUp() throws Exception {
-		log.info("Earth Staff Currency Converter started!");
+		// log.info("Earth Staff Currency Converter started!");
+		System.out.println("startup");
+
 	}
 
 	@Override
 	protected void shutDown() throws Exception {
-		log.info("Earth Staff Currency Converter stopped!");
+		// log.info("Earth Staff Currency Converter stopped!");
+		System.out.println("shutdown");
 	}
 
 	@Subscribe
