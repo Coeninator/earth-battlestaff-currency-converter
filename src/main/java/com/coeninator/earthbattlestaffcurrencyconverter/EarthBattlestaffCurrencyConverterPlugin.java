@@ -1,4 +1,4 @@
-package com.earthbattlestaffcurrencyconverter;
+package com.coeninator.earthbattlestaffcurrencyconverter;
 
 import com.google.inject.Provides;
 import javax.inject.Inject;
@@ -14,12 +14,12 @@ import net.runelite.client.plugins.PluginDescriptor;
 
 @Slf4j
 @PluginDescriptor(name = "Earth Battlestaff Currency Converter")
-public class EartyBattlestaffCurrencyPlugin extends Plugin {
+public class EarthBattlestaffCurrencyConverterPlugin extends Plugin {
 	@Inject
 	private Client client;
 
 	@Inject
-	private EartyBattlestaffCurrencyConfig config;
+	private EarthBattlestaffCurrencyConverterConfig config;
 
 	@Override
 	protected void startUp() throws Exception {
@@ -40,7 +40,7 @@ public class EartyBattlestaffCurrencyPlugin extends Plugin {
 	}
 
 	@Provides
-	ExampleConfig provideConfig(ConfigManager configManager) {
-		return configManager.getConfig(ExampleConfig.class);
+	EarthBattlestaffCurrencyConverterConfig provideConfig(ConfigManager configManager) {
+		return configManager.getConfig(EarthBattlestaffCurrencyConverterConfig.class);
 	}
 }
